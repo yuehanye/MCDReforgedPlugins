@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# v0.1.6
+# v0.1.7
 import os
 import requests
 import json
@@ -99,8 +99,8 @@ def on_qq_command(server, info, bot):
             server.logger.info('缺少OnlinePlayerAPI')
             with open('.\\plugins\\OnlinePlayerAPI.py', 'wb') as f:
                 f.write(requests.get(
-                    'https://raw.githubusercontent.com/zhang-anzhi'
-                    '/OnlinePlayerAPI/master/OnlinePlayerAPI.py').content)
+                    'https://raw.githubusercontent.com/zhang-anzhi/MCDReforgedPlugins/'
+                    'master/OnlinePlayerAPI/OnlinePlayerAPI.py').content)
             server.refresh_changed_plugins()
             server.logger.info('已自动下载并重载插件')
             online_player_api = server.get_plugin_instance('OnlinePlayerAPI')

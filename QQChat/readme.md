@@ -4,7 +4,11 @@
 
 发送/help查看机器人帮助
 
-需要[CoolQAPI](https://github.com/zhang-anzhi/CoolQAPI)和[OnlinePlayerAPI](https://github.com/zhang-anzhi/OnlinePlayerAPI)
+## 前置插件
+
+- [CoolQAPI](https://github.com/zhang-anzhi/CoolQAPI)
+
+- [OnlinePlayerAPI](https://github.com/zhang-anzhi/MCDReforgedPlugins/tree/master/OnlinePlayerAPI)
 
 ## 配置
 
