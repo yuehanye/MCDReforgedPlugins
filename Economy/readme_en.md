@@ -1,6 +1,6 @@
 # Economy
 
-[简体中文](https://github.com/zhang-anzhi/Economy/blob/master/readme.md)
+[简体中文](https://github.com/zhang-anzhi/MCDReforgedPlugins/blob/master/Economy/readme.md)
 
 > A Economic Plugin for [MCDReforged](https://github.com/Fallen-Breath/MCDReforged)
 

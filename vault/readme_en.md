@@ -1,6 +1,6 @@
 # vault
 
-[简体中文](https://github.com/zhang-anzhi/vault/blob/master/readme.md)
+[简体中文](https://github.com/zhang-anzhi/MCDReforgedPlugins/blob/master/vault/readme.md)
 
 > Economic plugin preposition
 >
@@ -10,8 +10,9 @@
 
 **Import**
 
-Add these things to`on_load`:
-```
+Add these things to `on_load`:
+
+```python
 global vault
 vault = server.get_plugin_instance('vault')
 ```

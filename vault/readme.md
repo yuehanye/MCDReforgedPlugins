@@ -1,6 +1,6 @@
 # vault
 
-[English](https://github.com/zhang-anzhi/vault/blob/master/readme_en.md)
+[English](https://github.com/zhang-anzhi/MCDReforgedPlugins/blob/master/vault/readme_en.md)
 
 > 经济类插件前置
 >
@@ -11,7 +11,8 @@
 **导入**
 
 在`on_load`中加入以下内容:
-```
+
+```python
 global vault
 vault = server.get_plugin_instance('vault')
 ```
