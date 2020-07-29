@@ -47,8 +47,8 @@ def on_player_left(server, player):
 
 
 def on_info(server, info):
-    # if info.content == '!!list':
-    #     server.reply(info, '§c' + str(get_player_list()))
+    if info.content == '!!list':
+        server.logger.debug(get_player_list())
     global execute, online_player
     if execute and 'players online' in info.content:
         if info.source != 0 or info.is_user:
