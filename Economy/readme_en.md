@@ -12,7 +12,7 @@
 
 **Required plugin**
 
-- [vault](https://github.com/zhang-anzhi/vault)
+- [vault](https://github.com/zhang-anzhi/MCDReforgedPlugins/tree/master/vault)
 
 ## Usage
 
