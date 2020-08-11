@@ -33,6 +33,7 @@ def on_load(server, old):
     else:
         thread = Render(server)
     server.logger.debug(f'当前渲染状态： {thread.is_render}')
+    server.add_help_message('!!map', '渲染卫星图')
 
 
 def on_info(server, info):
