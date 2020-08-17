@@ -6,4 +6,8 @@
 
 所有插件的开源许可统一为 [GNU General Public License v3.0](LICENSE)
 
-这里有你喜欢的插件就不要吝啬你的star
+Bug反馈/技术问题 等欢迎发 [Issue](https://github.com/zhang-anzhi/MCDReforgedPlugins/issues) 讨论
+
+Issue格式: `[插件名]标题`
+
+有喜欢的插件就点一点star吧
