@@ -38,6 +38,6 @@ def on_death_message(server, death_message):
 
 def append_msg(msg):
     global msg_list
-    msg_list.append(f'{msg}&r')
+    msg_list.append(f'{msg}§r')
     if len(msg_list) > 100:
         msg_list = msg_list[-100:]
