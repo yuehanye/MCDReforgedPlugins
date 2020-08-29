@@ -13,7 +13,7 @@ spec_price = 10
 tp_price = 20
 
 free_flag = True
-FILE_PATH = './plugins/gmR/'
+FILE_PATH = './plugins/GamemodeR/'
 dimension_convert = {
     '0': 'minecraft:overworld',
     '-1': 'minecraft:the_nether',
@@ -34,16 +34,16 @@ help_msg = '''
 
 
 def init_data():
-    if not os.path.isfile(FILE_PATH + 'gmR.json'):
-        with open(FILE_PATH + 'gmR.json', 'w') as create:
+    if not os.path.isfile(FILE_PATH + 'GamemodeR.json'):
+        with open(FILE_PATH + 'GamemodeR.json', 'w') as create:
             create.write(json.dumps({}, indent=1))
     global data
-    with open(FILE_PATH + 'gmR.json') as init:
+    with open(FILE_PATH + 'GamemodeR.json') as init:
         data = json.load(init)
 
 
 def save_data():
-    with open(FILE_PATH + 'gmR.json', 'w') as save:
+    with open(FILE_PATH + 'GamemodeR.json', 'w') as save:
         save.write(json.dumps(data, indent=1))
         save.flush()
 

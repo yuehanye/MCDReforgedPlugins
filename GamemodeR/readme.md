@@ -4,7 +4,7 @@
 >
 > 可选的收费功能
 
-感谢[方块君](https://github.com/Squaregentleman) 和他的的[gamemode](https://github.com/Squaregentleman/MCDR-plugins) 插件
+感谢[方块君](https://github.com/Squaregentleman)的[gamemode](https://github.com/Squaregentleman/MCDR-plugins) 插件
 
 ## 使用
 
