@@ -35,22 +35,18 @@ def get_total_memory():
     return round_size(psutil.virtual_memory().total)
 
 
-def get_this_used_memory():
-    # MCDR process
-    p = psutil.Process()
-    mem = 0
-    # cmd process
+def get_this_used_memory(server):
+    p = psutil.Process(server.get_server_pid())
+    mem = p.memory_info().rss
     for i in p.children():
-        # java process
-        for e in i.children():
-            mem += e.memory_info().rss
+        mem += i.memory_info().rss
     return round_size(mem)
 
 
 def get_world_size():
     def get_dir_size(dir_name):
         s = 0
-        for root, dirs, files in os.walk(f'server\\{dir_name}'):
+        for root, dirs, files in os.walk(os.path.join('server', dir_name)):
             s += sum(
                 [os.path.getsize(os.path.join(root, name)) for name in files])
         return s
@@ -69,7 +65,7 @@ def on_info(server, info):
                 '\n§7============ §6服务器信息 §7============\n',
                 f'§7CPU利用率:§6 {average(*psutil.cpu_percent(percpu=True))}%\n',
                 f'§7内存使用量:§6 {get_used_memory()} / {get_total_memory()}\n',
-                f'§7服务器内存占用:§6 {get_this_used_memory()}\n',
+                f'§7服务器内存占用:§6 {get_this_used_memory(server)}\n',
                 f'§7存档大小:§6 {get_world_size()}'
             )
         )
