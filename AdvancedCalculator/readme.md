@@ -11,17 +11,5 @@
 | !!calc \<expression> | 计算表达式 | !!calc 1+1 | 1+1=2 |
 | !!calc item \<count> | 物品数转换堆叠数 | !!calc item 1794 | 1794个物品为1盒2组3个 |
 | !!calc item \<box> \<stack> \<single> | 堆叠数转换物品数 | !!calc item 1 10 32 | 1盒10组32个为2400个物品 |
-| !!calc color \<red> \<green> \<blue> | 10进制RGB转16进制 | !!calc color 255 0 255 | [255, 0, 255] -> #FF00FF |
-| !!calc color \<#HEX> | 16十进制RGB转10进制 | !!calc color #00FF00 | #00FF00 -> [0, 255, 0] |
-
-## 例子
-
-`!!calc 1+1` -> `1+1=2`
-
-`!!calc item 65` -> `65个物品为0盒1组1个`
-
-`!!calc item 1 1 1` -> `1盒1组1个为1793个物品`
-
-`!!calc color 255 255 255` -> `(255, 255, 255) -> #FFFFFF`
-
-`!!calc color #FFFFFF` -> `#FFFFFF -> (255, 255, 255)`
+| !!calc color \<red> \<green> \<blue> | 10进制RGB转16进制 | !!calc color 255 0 255 | (255, 0, 255) -> #FF00FF |
+| !!calc color \<#HEX> | 16十进制RGB转10进制 | !!calc color #00FF00 | #00FF00 -> (0, 255, 0) |
